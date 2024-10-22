@@ -70,9 +70,10 @@ nav ul li a:hover {
 }
 
 .logo-container img {
-    height: 50px;
-    width: 50px;
-    margin-right: 10px;
+    height: 90px;
+    width: 100px;
+    margin-right: 8px;
+    margin-top: 10px;
 }
 
 .logo-text h1 {
@@ -129,6 +130,7 @@ nav .button-container  {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    
 }
 
 .iframe-container iframe {
@@ -159,6 +161,7 @@ nav .button-container  {
     text-align: center;
     margin-bottom: 20px;
     font-size: 23px;
+   
 }
 
 .service-list{
@@ -316,7 +319,6 @@ font-family: Arial, Helvetica, sans-serif;
         grid-template-columns: 1fr; 
     }
 }
-
 
 .gallery-section {
     padding: 50px 0 100px;
@@ -477,7 +479,65 @@ gap: 10%;
     background-color: #55ff00;
 }
 
+.news-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 5%;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.news-box {
+  margin-right: 20px;
+  flex: 0 0 150px;
+  min-width: 10%; 
+  box-sizing: border-box;
+  background-color: #fff; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px; 
+  margin: 0; 
+  border-radius: 20px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.news-box:nth-child(1) {
+  animation-delay: 6s;
+ 
+}
+
+.news-box:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.news-box:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.news-box:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.news-box:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.news-box:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.news-box:nth-child(7) {
+  animation-delay: 6s;
+}
 
 .footer-section {
     padding: 30px 0;
