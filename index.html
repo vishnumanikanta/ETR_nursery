@@ -266,6 +266,49 @@
             </p>
         </div>
     </footer>
+    <script>
+   
+  
+    const contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert(`Thank you ${name}! We'll contact you soon at ${email}`);
+                this.reset();
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+    }
+
+  
+    const productImages = document.querySelectorAll('.product-image');
+    productImages.forEach(image => {
+        image.addEventListener('mouseenter', () => {
+            image.style.transform = 'scale(1.05)';
+        });
+        image.addEventListener('mouseleave', () => {
+            image.style.transform = 'scale(1)';
+        });
+    });
+
+   
+    const viewMoreBtn = document.querySelector('.btnse');
+    if (viewMoreBtn) {
+        viewMoreBtn.addEventListener('click', () => {
+            alert('Loading more best sellers...');
+          
+        });
+    }
+
+   
+</script>
 </body>
 
 </html>
